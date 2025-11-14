@@ -11,14 +11,15 @@ public class Arma : MonoBehaviour
 
     private float tempoDeDisparo = 0;
     
-    private Camera camara;
+    private Camera camera;
     public GameObject cursor;
     
-    private SpriteRenderer srSpriteRenderer;
+    private SpriteRenderer spriteRenderer;
+    
     void Start()
     {
-     camara = GetComponent<Camera>();
-     srSpriteRenderer = GetComponent<SpriteRenderer>();
+     camera = Camera.main;
+     spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
  
@@ -34,19 +35,35 @@ public class Arma : MonoBehaviour
             transform.localScale = new Vector3(1,-1,1);
         }
         
-        float camDis = camara.transform.position.y - transform.position.y;
-        Vector3 mouse = camara.ScreentoWorldPoint(new Vector3 (Input.mousePosition.x, Input.mousePosition.y, camDis));
+        //distancia da camera ao objeto
+        float camDis = camera.transform.position.y - transform.position.y;
+        //posição mouse
+        Vector3 mouse = camera.ScreenToWorldPoint(new Vector3 (Input.mousePosition.x, Input.mousePosition.y, camDis));
         
         float AngleRad = Mathf.Atan2(mouse.y - transform.position.y, mouse.x - transform.position.x);
         float angle = (180 / Mathf.PI) * AngleRad;
         
-        transform.rotation = Quaternion.AngleAxis(angle,Vector3,forward);
+        transform.rotation = Quaternion.AngleAxis( angle, Vector3.forward);
         
-        Debug.Log("Angilo:" +angle);
+        //Debug.Log("Angilo:" +angle);
         
         cursor.transform.position = new Vector3(mouse.x, mouse.y, transform.position.z);
         
         Debug.DrawLine(transform.position, mouse, Color.red);
+
+        if (tempoDeDisparo <= 0 && Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Debug.Log("Bala disparada");
+            
+            GameObject b = Instantiate(this.bala, saidaDoTiro.position, saidaDoTiro.rotation) as GameObject;
+            tempoDeDisparo = intervaloDeDisparo;
+        }
+        
+        if (tempoDeDisparo > 0)
+        {
+            tempoDeDisparo -= Time.deltaTime;
+        }
+        
         
     }
 }

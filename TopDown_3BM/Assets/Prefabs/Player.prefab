@@ -184,6 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2208609352951186621}
   - component: {fileID: 3813300804446896484}
+  - component: {fileID: 1937521731479047949}
   m_Layer: 0
   m_Name: Arma
   m_TagString: Untagged
@@ -203,7 +204,8 @@ Transform:
   m_LocalPosition: {x: -0.04, y: -0.151, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1582103776103577172}
   m_Father: {fileID: 1196622126272032697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3813300804446896484
@@ -261,6 +263,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1937521731479047949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297897586416335483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59817a86cfbf674780c4a6351bb256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saidaDoTiro: {fileID: 1582103776103577172}
+  bala: {fileID: 0}
+  intervaloDeDisparo: 0.2
+  cursor: {fileID: 1637551042108888789}
 --- !u!1 &5909221840449182181
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +293,7 @@ GameObject:
   - component: {fileID: 4343169029316604599}
   - component: {fileID: 2770029966765226569}
   - component: {fileID: 5160252417940538242}
+  - component: {fileID: 988294114026500579}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -346,7 +365,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 1861406023, guid: 710136fa0125c2841ad206c1fccda1b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.6, y: 0.8}
@@ -470,3 +489,57 @@ MonoBehaviour:
   velocidade: 5
   vida: 10
   energia: 100
+  arma: {fileID: 0}
+--- !u!95 &988294114026500579
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909221840449182181}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e871369a444e44ea7e559beb941b39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &7055188785729569445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582103776103577172}
+  m_Layer: 0
+  m_Name: SaidaDoTiro
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582103776103577172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055188785729569445}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.54, y: 0.018, z: 0}
+  m_LocalScale: {x: 0.7012574, y: 0.7012574, z: 0.7012574}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2208609352951186621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
