@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1235126719704181355}
   - component: {fileID: 6441385406335745682}
   - component: {fileID: 2304175886628236964}
+  - component: {fileID: 1083144859406095562}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Bala
@@ -146,9 +147,23 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.04
+--- !u!114 &1083144859406095562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8682015670189171665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb819bdc87ddc4f4b8abd174bce1c7ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: 1
+  velocidade: 1.5
