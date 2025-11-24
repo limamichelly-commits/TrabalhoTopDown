@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 988294114026500579}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,7 +489,7 @@ MonoBehaviour:
   velocidade: 5
   vida: 10
   energia: 100
-  arma: {fileID: 0}
+  arma: {fileID: 2208609352951186621}
 --- !u!95 &988294114026500579
 Animator:
   serializedVersion: 7
@@ -537,7 +537,7 @@ Transform:
   m_GameObject: {fileID: 7055188785729569445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.54, y: 0.018, z: 0}
+  m_LocalPosition: {x: 0.246, y: 0.042, z: 0}
   m_LocalScale: {x: 0.7012574, y: 0.7012574, z: 0.7012574}
   m_ConstrainProportionsScale: 0
   m_Children: []

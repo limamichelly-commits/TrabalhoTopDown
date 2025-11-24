@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &100323329 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2208609352951186621, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
-  m_PrefabInstance: {fileID: 4329892659675340857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,28 +393,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1582103776103577172, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.246
-      objectReference: {fileID: 0}
-    - target: {fileID: 1582103776103577172, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.042
-      objectReference: {fileID: 0}
     - target: {fileID: 1937521731479047949, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
       propertyPath: bala
       value: 
       objectReference: {fileID: 2115650715}
-    - target: {fileID: 5160252417940538242, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
-      propertyPath: arma
-      value: 
-      objectReference: {fileID: 100323329}
     - target: {fileID: 5909221840449182181, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5909221840449182181, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
