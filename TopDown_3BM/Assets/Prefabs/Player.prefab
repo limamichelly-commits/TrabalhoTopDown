@@ -10,13 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 5833059628537353288}
   - component: {fileID: 4106577788638687420}
+  - component: {fileID: 1615517757004607074}
   m_Layer: 0
   m_Name: Bazuca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5833059628537353288
 Transform:
   m_ObjectHideFlags: 0
@@ -29,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 0.149, y: -0.23799998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5157962162396614316}
   m_Father: {fileID: 1196622126272032697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4106577788638687420
@@ -75,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 6909385119875833920, guid: cf54d06eec9674b4b9922f982e1b18ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,6 +89,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1615517757004607074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458184122126556077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59817a86cfbf674780c4a6351bb256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saidaDoTiro: {fileID: 5157962162396614316}
+  bala: {fileID: 7642275245255809331, guid: 8af46b0bfe350e449895289a81d624d9, type: 3}
+  intervaloDeDisparo: 0.2
+  cursor: {fileID: 1637551042108888789}
 --- !u!1 &1637551042108888789
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2208609352951186621
 Transform:
   m_ObjectHideFlags: 0
@@ -276,7 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saidaDoTiro: {fileID: 1582103776103577172}
-  bala: {fileID: 0}
+  bala: {fileID: 8682015670189171665, guid: c0d263f30c6afb544b13055803022fc4, type: 3}
   intervaloDeDisparo: 0.2
   cursor: {fileID: 1637551042108888789}
 --- !u!1 &5909221840449182181
@@ -537,9 +555,40 @@ Transform:
   m_GameObject: {fileID: 7055188785729569445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.246, y: 0.042, z: 0}
+  m_LocalPosition: {x: 0.529, y: 0.023, z: 0}
   m_LocalScale: {x: 0.7012574, y: 0.7012574, z: 0.7012574}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2208609352951186621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7793976935607222043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5157962162396614316}
+  m_Layer: 0
+  m_Name: SaidadoTiro
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5157962162396614316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793976935607222043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.326, y: 0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5833059628537353288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
