@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class TrocarArma : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject arma1;
+    public GameObject arma2;
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            arma1.SetActive(true);
+            arma2.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            arma1.SetActive(false);
+            arma2.SetActive(true);
+        }
     }
 }

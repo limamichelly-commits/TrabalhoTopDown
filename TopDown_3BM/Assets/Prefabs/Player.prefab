@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 2770029966765226569}
   - component: {fileID: 5160252417940538242}
   - component: {fileID: 988294114026500579}
+  - component: {fileID: 7876184479766804301}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -530,6 +531,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7876184479766804301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5909221840449182181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac7ef949c214f34487b4d62d00dc2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arma1: {fileID: 3297897586416335483}
+  arma2: {fileID: 1458184122126556077}
 --- !u!1 &7055188785729569445
 GameObject:
   m_ObjectHideFlags: 0
