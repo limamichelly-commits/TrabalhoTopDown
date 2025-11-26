@@ -1119,6 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1436118889}
+  - component: {fileID: 1436118890}
   m_Layer: 0
   m_Name: CriadordeInimigos
   m_TagString: Untagged
@@ -1151,6 +1152,34 @@ Transform:
   - {fileID: 1133681740}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436118890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436118888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1db2345a9ee8b341b67a18edf86455a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigos:
+  - {fileID: 5501264764270622336, guid: ee4091046c0bc2f4699d4b5d6e3f37c9, type: 3}
+  - {fileID: 5501264764270622336, guid: ee4091046c0bc2f4699d4b5d6e3f37c9, type: 3}
+  - {fileID: 5501264764270622336, guid: ee4091046c0bc2f4699d4b5d6e3f37c9, type: 3}
+  posicaoDosInimigos:
+  - {fileID: 1230727483}
+  - {fileID: 760177133}
+  - {fileID: 2144989334}
+  - {fileID: 1200863911}
+  - {fileID: 119307667}
+  - {fileID: 1654004313}
+  - {fileID: 900835426}
+  - {fileID: 734883936}
+  - {fileID: 516908061}
+  - {fileID: 1133681740}
+  tempoDoNovoInimigo: 10
 --- !u!1 &1503689298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,11 +1589,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1196622126272032697, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.727
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1196622126272032697, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.435
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1196622126272032697, guid: 6abb19193b0538e4a8c93487f65a478c, type: 3}
       propertyPath: m_LocalPosition.z
